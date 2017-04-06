@@ -17,7 +17,11 @@
                 </thead>
                 <tbody id="lePanier">
                     <?php
-                        echo $_POST['quantity'];
+                    $quantity = $_POST['quantity'];
+                    $index_prod = $_POST['index_produit'];
+                        echo $quantity;
+                        echo $index_prod;
+
                     ?>
 
 

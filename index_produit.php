@@ -32,9 +32,10 @@
                         <form action="index_panier.php" method="post">
                             <div class="col-md-8">
                                 <input type="number" name="quantity" value ="1" min="1" max="10" class="maQuantite">
+                                <input type="hidden" name="index_produit" value="".$index."" />
                             </div>
                             <div class="col-md-8">
-                                    <input type="submit" name="button" value="Ajouter au panier"></button>
+                                <input type="submit" name="submit" value="Ajouter au panier"/>
                             </div>
                         </form>
                         <div class="col-md-12 text-justify">
