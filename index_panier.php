@@ -18,7 +18,7 @@
                 <tbody id="lePanier">
                     <?php
                         echo $_POST['quantity'];
-                     ?>
+                    ?>
 
 
                 </tbody>

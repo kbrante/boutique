@@ -10,7 +10,7 @@
                     $index = $_GET["index"];
 
                     define('MYSQL_SERVEUR', 'localhost');
-                    define('MYSQL_UTILISATEUR', 'phpsyl');
+                    define('MYSQL_UTILISATEUR', 'keiko');
                     define('MYSQL_MOTDEPASSE', 'plop');
                     define('MYSQL_BASE', 'shop');
 
@@ -34,7 +34,7 @@
                                 <input type="number" name="quantity" value ="1" min="1" max="10" class="maQuantite">
                             </div>
                             <div class="col-md-8">
-                                    <button type="button" name="button">Ajouter au panier<span class=" glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                                    <input type="submit" name="button" value="Ajouter au panier"></button>
                             </div>
                         </form>
                         <div class="col-md-12 text-justify">

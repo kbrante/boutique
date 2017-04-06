@@ -75,7 +75,7 @@
                     </div> -->
                     <?php
                         define('MYSQL_SERVEUR', 'localhost');
-                        define('MYSQL_UTILISATEUR', 'phpsyl');
+                        define('MYSQL_UTILISATEUR', 'keiko');
                         define('MYSQL_MOTDEPASSE', 'plop');
                         define('MYSQL_BASE', 'shop');
 
@@ -95,7 +95,6 @@
                                     <a href="index_produit.php?index='.$i. '"><h4>'.$row['name'].'</h4></a>
                                     <p>'.$row['description'].'</p>
                                     <div class="lePrix text-right ">'.$row['price'].' €</div>
-                                    <a href="#">Ajoutter au panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
                                 </article></div>';
                                 $i+=1;
                             // echo $row['name']." ".$row['description']." ".$row['price']."<br />";
