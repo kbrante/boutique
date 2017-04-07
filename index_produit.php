@@ -21,7 +21,7 @@
                     $mysql->set_charset("utf8");
                     $sql = 'select * from Product WHERE id='.$index.';';
                     $result = $mysql->query($sql);
-
+                    
                     $row = $result->fetch_assoc();
                         echo '<div class="col-md-4">
                             <img id="imageP" src="http://lorempixel.com/200/200/" alt="img">
@@ -32,7 +32,7 @@
                         <form action="index_panier.php" method="post">
                             <div class="col-md-8">
                                 <input type="number" name="quantity" value ="1" min="1" max="10" class="maQuantite">
-                                <input type="hidden" name="index_produit" value="".$index."" />
+                                <input type="hidden" name="index_produit" value="'.$index.'" />
                             </div>
                             <div class="col-md-8">
                                 <input type="submit" name="submit" value="Ajouter au panier"/>

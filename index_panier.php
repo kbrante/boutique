@@ -9,18 +9,31 @@
                 <caption> Mon Panier</caption>
                 <thead>
                     <tr>
-
                         <th>Désignation</th>
                         <th>Prix Unitaire TTC</th>
                         <th>Quantité</th>
                         <th>Prix Total TTC</th>
                 </thead>
                 <tbody id="lePanier">
+
                     <?php
-                    $quantity = $_POST['quantity'];
-                    $index_prod = $_POST['index_produit'];
+                        $quantity = $_POST['quantity'];
+                        $index_prod = $_POST['index_produit'];
                         echo $quantity;
                         echo $index_prod;
+                        define('MYSQL_SERVEUR', 'localhost');
+                        define('MYSQL_UTILISATEUR', 'keiko');
+                        define('MYSQL_MOTDEPASSE', 'plop');
+                        define('MYSQL_BASE', 'shop');
+
+                        $mysql = new mysqli(MYSQL_SERVEUR,
+                                    MYSQL_UTILISATEUR,
+                                    MYSQL_MOTDEPASSE,
+                                    MYSQL_BASE);
+                        $mysql->set_charset("utf8");
+                        $sql = "insert into contains(id_cart,id_product,quantity)
+                        values (1,$index_prod, $quantity)";
+                        $result = $mysql->query($sql);
 
                     ?>
 
