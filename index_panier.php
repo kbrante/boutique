@@ -31,13 +31,13 @@
                                     MYSQL_UTILISATEUR,
                                     MYSQL_MOTDEPASSE,
                                     MYSQL_BASE);
+
                         $mysql->set_charset("utf8");
                         $sql = "insert into contains(id_cart,id_product,quantity)
                         values (1,$index_prod, $quantity)";
                         $result = $mysql->query($sql);
-                        $quantity = $result->fetch_assoc();
 
-                        $mysql -> query("select * FROM contains JOIN Product ON id_product;");
+                        $mysql->query("select * FROM contains JOIN Product ON id_product;");
                         echo '<tr>
                             <td>coucou</td>
                             <td><input type="number" value=""/></td>
