@@ -37,11 +37,7 @@
                         values (1,$index_prod, $quantity)";
                         $result = $mysql->query($sql);
 
-                        $mysql->query("select * FROM contains JOIN Product ON id_product;");
-                        echo '<tr>
-                            <td>coucou</td>
-                            <td><input type="number" value=""/></td>
-                        </tr>';
+
 
                     ?>
 
